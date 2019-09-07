@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/small-dog-barking_daniel-simion.ogg-3ef240e866427910069c5aa1daf8ae4b.oggstr"
+
+[deps]
+
+source_file="res://small-dog-barking_daniel-simion.ogg"
+dest_files=[ "res://.import/small-dog-barking_daniel-simion.ogg-3ef240e866427910069c5aa1daf8ae4b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

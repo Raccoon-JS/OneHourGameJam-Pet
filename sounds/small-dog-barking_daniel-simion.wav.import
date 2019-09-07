@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/small-dog-barking_daniel-simion.wav-bc252e3289ca6f0849a3715a6caf1b53.sample"
+
+[deps]
+
+source_file="res://sounds/small-dog-barking_daniel-simion.wav"
+dest_files=[ "res://.import/small-dog-barking_daniel-simion.wav-bc252e3289ca6f0849a3715a6caf1b53.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

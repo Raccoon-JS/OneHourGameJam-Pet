@@ -1,5 +1,5 @@
 extends KinematicBody2D
-var foods = ["bone","bowl","steak"]
+var foods = ["bone","BOWL","steak"]
 var speed
 var state
 var move = Vector2()

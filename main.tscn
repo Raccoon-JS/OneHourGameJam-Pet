@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://futur.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://puppy_dog_white_outline.png" type="Texture" id=3]
+[ext_resource path="res://sounds/small-dog-barking_daniel-simion.wav" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -103,7 +104,7 @@ margin_top = 684.525
 margin_right = 497.355
 margin_bottom = 786.525
 custom_fonts/font = SubResource( 5 )
-text = "K for bowl"
+text = "K for BOWL"
 align = 1
 valign = 1
 
@@ -118,4 +119,8 @@ align = 1
 valign = 1
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="bark" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -22.214
 [connection signal="body_entered" from="dog" to="." method="_on_dog_body_entered"]

@@ -2,7 +2,7 @@ extends Node
 
 onready var dog_food = $status/dog
 var food = preload("res://food.tscn")
-var foods = ["bone","bowl","steak"]
+var foods = ["bone","BOWL","steak"]
 var points = 0
 var reload
 var state
@@ -17,6 +17,7 @@ func _ready():
 	$dog.modulate = colors.colors[2]
 	$status/dog.modulate = colors.colors[3]
 	$status/buttons.modulate = colors.colors[3]
+	$status/points.modulate = colors.colors[2]
 	state = foods[int(rand_range(0,3))]
 	dog_food.text = state
 	pass # Replace with function body.
@@ -53,10 +54,10 @@ func _physics_process(delta):
 func _on_dog_body_entered(body):
 	if body.state == state:
 		points += 100
-		global.more_speed += 50
+		global.more_speed += 10
+		$bark.play(0.0)
 		body.queue_free()
 	else:
-		global.default_speed = 100
-		global.more_speed = 0
+		global.reset()
 		reload = get_tree().reload_current_scene()
 	pass # Replace with function body.

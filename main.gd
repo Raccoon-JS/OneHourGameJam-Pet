@@ -17,7 +17,7 @@ func _ready():
 	$dog.modulate = colors.colors[2]
 	$status/dog.modulate = colors.colors[3]
 	$status/buttons.modulate = colors.colors[3]
-	$status/points.modulate = colors.colors[2]
+	$status/points.modulate = colors.colors[3]
 	state = foods[int(rand_range(0,3))]
 	dog_food.text = state
 	pass # Replace with function body.
